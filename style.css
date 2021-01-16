@@ -8,7 +8,7 @@ a:hover { color: red; text-decoration: underline;}
    text-decoration: none;
    margin: 10px;
  }
- .button {
+.nightday {
    text-align: center;
    background-color: #EFCCD2;
    padding-bottom: 20px;
@@ -23,17 +23,15 @@ a:hover { color: red; text-decoration: underline;}
    text-align:center;
    background-color: #EFCCD2;
  }
- #ww ol{
+ #list ol{
    background-color: #B9B7BD;
-   list-style-image: url("https://www.flaticon.com/svg/vstatic/svg/149/149217.svg?token=exp=1610423406~hmac=65d72c2ae888479c6dc35ff8958145f0");
-   font: 17px "Times New Roman", Times, serif;
    border-right: 1px black hidden;
    width:100px;
    padding-left:30px;
    padding-top:30px;
    margin:0;
  }
- #ww{
+ #list{
    display:grid;
    grid-template-columns: 150px 1fr;
    background-color: #EEEDE7;
@@ -45,9 +43,9 @@ a:hover { color: red; text-decoration: underline;}
  }
  @media(max-width:800px){
 
-   #ww{
+   #list{
      display:block;}
-   #ww ol{
+   #list ol{
      border-right: none;
      width:auto;
      padding-bottom:10px;
