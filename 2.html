@@ -8,6 +8,38 @@
 </head>
  <body>
    <h1><a href="index.html">납끼코딩</a></h1>
+   <div class="nightday">
+     <input type="button" value="Night" onclick="
+     var target=document.querySelector('.list');
+     var target2=document.querySelector('ol');
+   if(this.value === 'Night'){
+     target.style.backgroundColor='black';
+     target.style.color = 'white';
+     target2.style.backgroundColor='black';
+     this.value='Day';
+
+     var alist=document.querySelectorAll('a');
+     var i=1;
+     while(i<alist.length){
+       alist[i].style.color='powderblue';
+       i=i+1;
+     }
+   }
+   else {
+     target.style.backgroundColor='#EEEDE7';
+     target.style.color = 'black';
+     target2.style.backgroundColor='#B9B7BD';
+     this.value ='Night';
+
+     var alist=document.querySelectorAll('a');
+     var i=1;
+     while(i<alist.length){
+       alist[i].style.color='black';
+       i=i+1;
+     }
+   }
+   ">
+   </div>
    <div class="list">
   <ol>
     <li><a href="1.html">HTML</a></li>

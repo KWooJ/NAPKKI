@@ -23,7 +23,7 @@ a:hover { color: red; text-decoration: underline;}
    text-align:center;
    background-color: #EFCCD2;
  }
- #list ol{
+ .list ol{
    background-color: #B9B7BD;
    border-right: 1px black hidden;
    width:100px;
@@ -31,7 +31,7 @@ a:hover { color: red; text-decoration: underline;}
    padding-top:30px;
    margin:0;
  }
- #list{
+ .list{
    display:grid;
    grid-template-columns: 150px 1fr;
    background-color: #EEEDE7;
@@ -43,9 +43,9 @@ a:hover { color: red; text-decoration: underline;}
  }
  @media(max-width:800px){
 
-   #list{
+   .list{
      display:block;}
-   #list ol{
+   .list ol{
      border-right: none;
      width:auto;
      padding-bottom:10px;

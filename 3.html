@@ -8,6 +8,38 @@
 </head>
  <body>
    <h1><a href="index.html">납끼코딩</a></h1>
+   <div class="nightday">
+     <input type="button" value="Night" onclick="
+     var target=document.querySelector('.list');
+     var target2=document.querySelector('ol');
+   if(this.value === 'Night'){
+     target.style.backgroundColor='black';
+     target.style.color = 'white';
+     target2.style.backgroundColor='black';
+     this.value='Day';
+
+     var alist=document.querySelectorAll('a');
+     var i=1;
+     while(i<alist.length){
+       alist[i].style.color='powderblue';
+       i=i+1;
+     }
+   }
+   else {
+     target.style.backgroundColor='#EEEDE7';
+     target.style.color = 'black';
+     target2.style.backgroundColor='#B9B7BD';
+     this.value ='Night';
+
+     var alist=document.querySelectorAll('a');
+     var i=1;
+     while(i<alist.length){
+       alist[i].style.color='black';
+       i=i+1;
+     }
+   }
+   ">
+   </div>
    <div class="list">
   <ol>
     <li><a href="1.html">HTML</a></li>
@@ -16,7 +48,7 @@
   </ol>
   <div class="w">
   <h2>Javascript</h2>
-  <a href="https://www.w3.org/TR/html5/" target="_blank">Javascript란?</a>
+  <a href="https://www.w3.org/TR/html5/" target="_blank" style="text-decoration: underline">Javascript란?</a>
   <p><strong>Javascript</strong>는 정적인 html에 생명을 불어넣는 것이다. 움직이고 상황에 따라 다르게 행동할 수 있도록.</p>
 </div>
 </div>
